@@ -1,0 +1,20 @@
+-- SQLBook: Code
+SELECT model, base_msrp, production_start_date
+FROM products
+WHERE 
+product_type = 'scooter'
+ORDER BY base_msrp
+
+
+-- SQLBook: Code
+SELECT model, product_id
+FROM products
+WHERE product_type = 'scooter'
+
+-- SQLBook: Code
+SELECT model, product_id
+INTO product_names
+FROM products
+WHERE product_type = 'scooter';
+
+SELECT * FROM product_names LIMIT 15;
